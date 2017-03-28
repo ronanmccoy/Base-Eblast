@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>[Email Subject]</title>
+    <!--
+        DEV Note: the text version of the email is a more simplified html structure
+        and can be used two ways:
+        1. to create a page hosted on the site that the user can view in lieu of the
+        email,
+        2. or a plain text copy of the email, in which case the html here should be
+        removed.
+    -->
+    <style>
+        body {width: 100%; background-color: #ffffff;}
+        a {text-decoration: underline; color: #296DC0;}
+        a:hover {text-decoration: underline; color: #296DC0;}
+        a:focus {text-decoration: underline; color: #296DC0;}
+        a:visited {text-decoration: underline; color: #296DC0;}
+        p {color: #58585A; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0;}
+
+        @media only print {
+            img.noprint {display: none !important;}
+        }
+    </style>
+</head>
+<body>
+    <!--
+        DEV NOTE: standard width for emails is 600px, but 800px works as a good upper limit.
+        Set a defined width of the wrapper, then everything inside can be responsive using
+        percentages or not.
+    -->
+    <table id="emailContainer" border="0" cellpadding="0" cellspacing="0" height="100%" width="800px">
+        <tr>
+            <td align="center" valign="top">
+
+                <table id="emailContentWrapper" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+                    <tr>
+                        <td align="center" valign="top">
+
+                            <table id="emailHeader">
+                                <tr>
+                                    <td>[Email Header HTML]</td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr><tr>
+                        <td align="center" valign="top">
+
+                            <table id="emailBody">
+                                <tr>
+                                    <td>[Email Body HTML & Copy]</td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr><tr>
+                        <td align="center" valign="top">
+
+                            <table id="emailFooter">
+                                <tr>
+                                    <td>[Email Footer HTML]</td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
